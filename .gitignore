@@ -1,0 +1,20 @@
+# dependencies
+node_modules/
+
+# secrets — never commit; see backend/.env.example
+.env
+.env.local
+*.env
+!.env.example
+
+# build output
+build/
+dist/
+
+# test output
+coverage/
+junit-results.xml
+
+# misc
+.DS_Store
+npm-debug.log*

@@ -1,0 +1,170 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            height: 100%;
+        }
+        .header {
+            flex-shrink: 0;
+            flex-grow: 0;
+            flex-basis: 64px;
+            display: flex;
+            background-color: lightgreen;
+            * {
+                display: flex;
+                align-items: center;
+            }
+            .space {
+                flex-basis: 0px;
+                flex-grow: 1;
+                flex-shrink: 0;
+            }
+        }
+        .main {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .content {
+            flex-grow: 1;
+            min-height: 0;
+            display: flex;
+
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            .card-content {
+                flex-grow: 1;
+            }
+            .card-title {
+                flex-basis: 60px;
+                flex-grow: 0;
+                flex-shrink: 0;
+                display: flex;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="title" style="background-color: lightcoral;">
+                Recover
+            </div>
+            <div class="space"></div>
+            <div class="right">
+                logout
+            </div>
+        </div>
+        <div class="content">
+            <div class="card" style="height: 100%; width: 200px; background-color: lightblue;">
+                <div class="card-title">
+                    Patient List
+                </div>
+                <div class="card-content" style="overflow: overlay;">
+                    <div style="height: 60px;width: 100%;">
+                        patient 1
+                    </div>
+                    <div style="height: 60px;width: 100%;">
+                        patient 1
+                    </div>
+                    <div style="height: 60px;width: 100%;">
+                        patient 1
+                    </div>
+                    <div style="height: 60px;width: 100%;">
+                        patient 1
+                    </div>
+                    <div style="height: 60px;width: 100%;">
+                        patient 1
+                    </div>
+                    <div style="height: 60px;width: 100%;">
+                        patient 1
+                    </div>
+                    <div style="height: 60px;width: 100%;">
+                        patient 1
+                    </div>
+                    <div style="height: 60px;width: 100%;">
+                        patient 1
+                    </div>
+                    <div style="height: 60px;width: 100%;">
+                        patient 1
+                    </div>
+                    <div style="height: 60px;width: 100%;">
+                        patient 1
+                    </div>
+                    <div style="height: 60px;width: 100%;">
+                        patient 1
+                    </div>
+                    <div style="height: 60px;width: 100%;">
+                        patient 1
+                    </div>
+                    <div style="height: 60px;width: 100%;">
+                        patient 1
+                    </div>
+                </div>
+            </div>
+            <div style="background-color: lightblue; flex-grow: 3; flex-basis: 200px; display: flex; flex-direction: column;">
+                <div class="card" style="flex-basis: 200px;">
+                    <div class="card-title">
+                        patient details
+                    </div>
+                    <div class="card-content">
+                        <div>
+                            <div>
+                                take some space
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="flex-grow: 1; background-color: lightcoral;">
+                    <div class="card-title">
+                        patient details
+                    </div>
+                    <div class="card-content">
+                        <div>
+                            <div>
+                                take some space
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="background-color: lightcoral; flex-grow: 1; flex-basis: 200px; display: flex; flex-direction: column;">
+                <div class="card" style="flex-grow: 1">
+                    <div class="card-title">
+                        patient details
+                    </div>
+                    <div class="card-content">
+                        <div>
+                            <div>
+                                take some space
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="flex-grow: 1; background-color: lightcoral;">
+                    <div class="card-title">
+                        patient details
+                    </div>
+                    <div class="card-content">
+                        <div>
+                            <div>
+                                take some space
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
